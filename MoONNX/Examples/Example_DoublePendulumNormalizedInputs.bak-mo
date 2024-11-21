@@ -1,0 +1,13 @@
+within MoONNX.Examples;
+model Example_DoublePendulumNormalizedInputs
+  "Example of a double pendulum controlled by a neural network. Extended for normalized Inputs."
+  extends Example_DoublePendulum(runONNX(
+      fileName=
+          "C:/Users/tabrun/Hochschule Luzern/FG Systemmodellierung, Digital Twins - TM - Dokumente/General/Projekte/20240912_ONNX-Modelica-Framework/20241107_ONNX-Modelica-Framework_v4/Library/ModelicaONNXFramework/Resources/ONNX-DoublePendulum_NormObs.onnx",
+      period=0.001,
+      use_NormalizedInputs=true,
+      ObsNormmeanfile=
+          "C:/Users/tabrun/Hochschule Luzern/FG Systemmodellierung, Digital Twins - TM - Dokumente/General/Projekte/20240912_ONNX-Modelica-Framework/20241107_ONNX-Modelica-Framework_v4/Library/ModelicaONNXFramework/Resources/obs_mean.txt",
+      ObsNormvarfile=
+          "C:/Users/tabrun/Hochschule Luzern/FG Systemmodellierung, Digital Twins - TM - Dokumente/General/Projekte/20240912_ONNX-Modelica-Framework/20241107_ONNX-Modelica-Framework_v4/Library/ModelicaONNXFramework/Resources/obs_var.txt"));
+end Example_DoublePendulumNormalizedInputs;
