@@ -56,7 +56,7 @@ Utilize all the modeling and simulation tools available to observe how your neur
 <br/>
 <br/>
 
-**Integrate Surrogate Models for Faster Simulations** <br/>
+**Integrate surrogate models for faster simulations** <br/>
 Replace detailed system models with machine learning-based surrogate models to speed up simulations.
 
 **ToDo:**
