@@ -59,5 +59,11 @@ equation
       Interval=0.001,
       __Dymola_Algorithm="Cvode"),
     Diagram(coordinateSystem(extent={{-120,-100},{100,100}})),
-    Icon(coordinateSystem(extent={{-120,-100},{100,100}})));
+    Icon(coordinateSystem(extent={{-120,-100},{100,100}})),
+    Documentation(revisions="<html>
+Revisions
+November 21, 2024 by Thomas Sergi and Joshua Brun: Implemented.
+</html>", info="<html>
+<p>This example model demonstrates a double pendulum controlled by a neural network in Modelica, seamlessly integrated using the MoONNX Library. The enhanced version includes an option for user interaction, allowing dynamic testing and exploration of the controller&apos;s behavior.</p>
+</html>"));
 end NNControllerUserInteraction;

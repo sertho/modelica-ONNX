@@ -178,13 +178,13 @@ equation
   connect(relativeAngularVelocity1.w_rel[3], anglevelocity1) annotation (Line(
         points={{40.6667,-40},{44,-40},{44,-30},{110,-30}},
                                                     color={0,0,127}));
-  connect(relativeSensor1.angles[3], angle1) annotation (Line(points={{70.6667,-40},{80,-40},{80,-80},{110,-80}},
-                                              color={0,0,127}));
+  connect(relativeSensor1.angles[3], angle1) annotation (Line(points={{70.6667,
+          -40},{80,-40},{80,-80},{110,-80}},  color={0,0,127}));
   connect(relativeAngularVelocity2.w_rel[3], anglevelocity2)
     annotation (Line(points={{40.6667,39.5},{44,39.5},{44,80},{110,80}},
                                                              color={0,0,127}));
-  connect(relativeSensor2.angles[3], angle2) annotation (Line(points={{70.6667,40},{90,40},{90,30},{110,30}},
-                                             color={0,0,127}));
+  connect(relativeSensor2.angles[3], angle2) annotation (Line(points={{70.6667,
+          40},{90,40},{90,30},{110,30}},     color={0,0,127}));
   connect(relativeAngularVelocity2.frame_b, revolute2.frame_b) annotation (Line(
       points={{30,50},{30,60},{0,60},{0,50}},
       color={95,95,95},
@@ -209,12 +209,12 @@ equation
   connect(const.y, force_tip.force[3]) annotation (Line(points={{-69,50},{
           -60,50},{-60,90},{-44,90},{-44,90.8},{-42.4,90.8}}, color={0,0,
           127}));
-  connect(input_force_joint, force_joint.force[1]) annotation (Line(points={{-120,0},{-60,0},{-60,19.3333},{-42,19.3333}},
-                                                          color={0,0,127}));
+  connect(input_force_joint, force_joint.force[1]) annotation (Line(points={{-120,0},
+          {-60,0},{-60,19.3333},{-42,19.3333}},           color={0,0,127}));
   connect(const.y, force_joint.force[2]) annotation (Line(points={{-69,50},
           {-60,50},{-60,20},{-42,20}}, color={0,0,127}));
-  connect(const.y, force_joint.force[3]) annotation (Line(points={{-69,50},{-60,50},{-60,20},{-42,20},{-42,20.6667}},
-                                                     color={0,0,127}));
+  connect(const.y, force_joint.force[3]) annotation (Line(points={{-69,50},{-60,
+          50},{-60,20},{-42,20},{-42,20.6667}},      color={0,0,127}));
   connect(MotorTorqueSize.y, MotorTorque)
     annotation (Line(points={{-60,-81},{-60,-110}}, color={0,0,127}));
   annotation (
@@ -254,6 +254,9 @@ In this example, it is simply done by <code>revolute2.phi.start&nbsp;=&nbsp;Mode
 <blockquote>
 <img src=\"modelica://Modelica/Resources/Images/Mechanics/MultiBody/Examples/Elementary/DoublePendulumInitTip.png\">
 </blockquote>
+</html>", revisions="<html>
+Revisions
+November 21, 2024 by Thomas Sergi and Joshua Brun: Implemented.
 </html>"),
     Diagram(coordinateSystem(extent={{-100,-100},{100,100}})),
     Icon(coordinateSystem(extent={{-100,-100},{100,100}}), graphics={

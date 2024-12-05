@@ -55,5 +55,11 @@ equation
     experiment(
       StopTime=10,
       Interval=0.001,
-      __Dymola_Algorithm="Cvode"));
+      __Dymola_Algorithm="Cvode"),
+    Documentation(revisions="<html>
+Revisions
+November 21, 2024 by Thomas Sergi and Joshua Brun: Implemented.
+</html>", info="<html>
+<p>This example model demonstrates a double pendulum controlled by a neural network in Modelica, seamlessly integrated using the MoONNX Library. The controller&apos;s performance can be tested by applying forces to the pendulum&apos;s tip or joints.</p>
+</html>"));
 end NNController;
